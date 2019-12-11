@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="exercise">
+        <!-- 1) Show an alert when the Button gets clicked -->
+        <div>
+            <button @click="alertOnClicked">Show Alert</button>
+        </div>
+        <!-- 2) Listen to the "keydown" event and store the value in a data property (hint: event.target.value gives you the value) -->
+        <div>
+            <input type="text" v-on:keydown="value = $event.target.value">
+            <p>{{ value }}</p>
+        </div>
+        <!-- 3) Adjust the example from 2) to only fire if the "key down" is the ENTER key -->
+        <div>
+            <input type="text" v-on:keydown.enter="getValueOnEnter">
+            <p>{{ value }}</p>
+        </div>
+
+        
+
+    </div>
+
+   
+    <section>
+            <form action="" method="POST">
+
+                First Name:<input type="text" name="firstname"> <br> 
+                First Name:<input type="text" name="firstname"> <br>
+        
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" id="" value="Female"> Female
+                <br>
+                <input type="checkbox" name="pets" id=""> Cats
+                <input type="checkbox" name="pets" id=""> Dogs
+                <br>
+                <select name="car" id="">
+                    <option value="volvo">Value</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br>
+                <input type="password" name="" id="" min="10"> Password
+                <br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+    </section>
+    
+
+    <script src="app.js"> </script>
+
+</body>
+</html>
